@@ -111,14 +111,9 @@
     }
 
     .details .row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-bottom: 0.25rem;
+      display: block;
+      margin-bottom: 0.65rem;
     }
-
-    .details .emoji { font-size: 1.1rem; }
 
     .badge {
       display: inline-block;
@@ -194,6 +189,7 @@
       letter-spacing: 0.03em;
       transition: background 0.2s, border-color 0.2s;
       text-align: center;
+      white-space: nowrap;
     }
 
     .btn-call:hover {
@@ -234,6 +230,7 @@
       .card-top { padding: 2rem 1.5rem 2rem; }
       .card-bottom { padding: 1.25rem 1.5rem; }
       .headline { font-size: 1.2rem; }
+      .details { font-size: 0.88rem; }
     }
   </style>
 </head>
@@ -261,12 +258,12 @@
         <hr class="divider" />
 
         <div class="details">
-          <div class="row"><span class="emoji">📅</span> <strong>Thursday, April 23</strong></div>
-          <div class="row"><span class="emoji">⏰</span> 10PM – 3AM</div>
-          <div class="row"><span class="emoji">📍</span> 750 Pacific Blvd <em>(1 min from BC Place)</em></div>
-          <div class="row"><span class="emoji">🔞</span> 19+ Event</div>
-          <div class="row"><span class="emoji">🔥</span> 1000+ people at Vancouver's newest venue</div>
-          <div class="row"><span class="emoji">🎧</span> Music by <strong>DJ Prince &amp; DJ Emergency</strong></div>
+          <div class="row">📅 <strong>Thursday, April 23</strong></div>
+          <div class="row">⏰ 10PM – 3AM</div>
+          <div class="row">📍 750 Pacific Blvd <em>(1 min from BC Place)</em></div>
+          <div class="row">🔞 19+ Event</div>
+          <div class="row">🔥 1000+ people at Vancouver's newest venue</div>
+          <div class="row">🎧 Music by <strong>DJ Prince &amp; DJ Emergency</strong></div>
         </div>
 
         <p class="hype">Expect packed floors, unreal energy &amp; straight madness all night 🎶🔥</p>
